@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #8ce4ff;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(5, 20%);
+            }
+
+            .game-button {
+                background-color: #cbf1ff;
+                color: black; 
+                border: 4px solid #00a6ff;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+
+            .game-button:hover {
+                background-color: #00a6ff;
+                color: white;
+            }
+
+            .game-button img {
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+                margin-bottom: 5px;
+            }
+
+            .game-button p {
+                font-size: 30px;
+                margin-top: 5px;
+            }
+
+            .inp {
+                border-radius: 5px;
+            }
+
+            #play-button {
+                background-color: #79aaff;
+                color: black; 
+                border: 4px solid #0055ff;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+
+            #play-button:hover {
+                background-color: #0055ff;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <button class="game-button" onclick="openGame('https://docs.google.com/presentation/d/17slD_o3y4jxL1607W-pel2g73NAHDU2gm1iLO6_jZZU/edit#slide=id.g241e03e1a8b_0_30')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1024px-YouTube_full-color_icon_%282017%29.svg.png">
+                <p>YT Videos</p>
+            </button>
+            <button class="game-button" onclick="openGame('https://www.rossipotti.de/ausgabe28/tetris/index.html')">
+                <img src="https://cdn-icons-png.flaticon.com/512/1138/1138720.png">
+                <p>Tetris</p>
+            </button>
+            <button class="game-button" onclick="openGame('https://diep.io/')">
+                <img src="https://play-lh.googleusercontent.com/6lO401fxwNTk919VwTKOdKGot82kf1WFBYGdhnVgDVsmkdK6Nv6d2ZDpmKBVO9CW2s8=w240-h480-rw">
+                <p>Diep.io</p>
+            </button>
+            <button class="game-button" onclick="openGame('https://docs.google.com/document/d/1ILxJuXpoC98ZL0gcl0gzBobGUu8KglTPKaUhQRdNVW8/edit')">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968517.png">
+                <p>Snowy Messaging</p>
+            </button>
+            <button class="game-button" onclick="openGame('https://play2048.co/')">
+                <img src="https://play-lh.googleusercontent.com/XKupc4Shg9j1nNfw8C39seA6cjMHG9bZf0HgX61XT5yOCTDXwTbo2GaVyikhTbnQacLi">
+                <p>2048</p>
+            </button>
+            <button class="game-button" onclick="openGame('https://supermario-game.com/')">
+                <img src="https://pressthebuttons.typepad.com/.a/6a00d83452033569e20120a56c4d36970b-600wi">
+                <p>Super Mario</p>
+            </button>
+            <button class="game-button" onclick="openGame('https://freeminesweeper.org/')">
+                <img src="https://play-lh.googleusercontent.com/ZQqNzIobFUXFO-IzPJaH5cv2QE9o7YpvooVWyTmaomxlBXfVwKjHWhYLALWLrohMrg">
+                <p>Minesweeper</p>
+            </button>
+            <button class="game-button" onclick="openGame('https://solitaired.com/')">
+                <img src="https://icon-library.com/images/solitaire-icon/solitaire-icon-21.jpg">
+                <p>Solitaire</p>
+            </button>
+            <button class="game-button" onclick="openGame('https://www.stumbleguys.com/')">
+                <img src="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon_thumb/512dea4132628ddddccdd5b133c3c502.png">
+                <p>Stumble Guys</p>
+            </button>
+            <button class="game-button" onclick="openGame('https://freepacman.org/')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Pacman.svg/1200px-Pacman.svg.png">
+                <p>Pacman</p>
+            </button>
+            <button class="game-button" onclick="openGame('https://agar.lol/')">
+                <img src="https://freepngimg.com/save/94002-roblox-area-agario-games-io-circle/512x512">
+                <p>Agar.io</p>
+            </button>
+            <button class="game-button" onclick="openGame('https://ducklife.online/crossy-road')">
+                <img src="https://play-lh.googleusercontent.com/2yH_JCxn7D9FttXZViPhmvIEDfRhio5qdLdWJLxcIfh8PjIkVeBgt_Gj7q21dIRp97g">
+                <p>Crossy Road</p>
+            </button>
+            <button class="game-button" onclick="openGame('https://worldle.online/')">
+                <img src="https://ik.imagekit.io/lr3upfezvh/Tattoo_Designs/Space_And_Time/World_map_1_5XXPVY6zjw.png">
+                <p>Worldle</p>
+            </button>
+            <button class="game-button" onclick="openGame('https://entanglement.gopherwoodstudios.com/en-US-index.html')">
+                <img src="https://lh3.googleusercontent.com/6zcbLjT9HXNs99HKmvKQxl7YZi3v_YsW24f6SCUoeDiVppxlHbpi61v_k6FqcIRZxAiq9wIutJtztGEaz921-skeCEE=w640-h400-e365-rj-sc0x00ffffff">
+                <p>Entanglement</p>
+            </button>
+            <button class="game-button" onclick="openGame('https://doodlejump.io/')">
+                <img src="https://play-lh.googleusercontent.com/aHnvdFTx0LVyfVHQLX51VcWBYkSVGvggr4FvIiP-iwBu4pKBiOQA1OnRi_nyFdCWqlU8">
+                <p>Doodle Jump</p>
+            </button>
+        </div>
+        <div class="input-container">
+            <button id="play-button" onclick="openGame()">Play</button>
+            <input type="text" id="inputfield" name="inputfield" class="inp" style="height:30px; width:600px;top:65px;" size="20" placeholder="URL goes in here. (Make sure https:// is in the URL)">
+        </div>
+        <script>
+            function openGame(url){
+                if (url == null) { var url = document.getElementById("inputfield").value;}
+                var win = window.open();
+                var iframe = win.document.createElement('iframe');
+                iframe.style.width = "100%";
+                iframe.style.height = "100%";
+                iframe.style.border = "none";
+                iframe.src = url;
+                win.document.body.style.margin = "0";
+                win.document.body.style.padding = "0";
+                win.document.body.appendChild(iframe);
+                console.log(url)
+            }
+
+            document.addEventListener('DOMContentLoaded', function ()
+            {
+                const grid = document.querySelector('.grid-container');
+                function processChildren()
+                {
+                    const buttons = Array.from(grid.children);
+                    for (let i = 0; i < buttons.length; i++)
+                    {
+                        const width = parseFloat(window.getComputedStyle(buttons[i]).width);
+                        buttons[i].style.height = width + 'px';
+                    }
+                }
+                window.addEventListener('load', processChildren);
+            });
+        </script>
+    </body>
+</html>
